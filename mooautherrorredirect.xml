@@ -3,10 +3,13 @@
 	<name>System - miniOrange OAuth Error Redirect</name>
 	<author>East Cheshire Ramblers</author>
 	<creationDate>2026-06-26</creationDate>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<description>Replaces the miniOrange OAuth user auto-creation error page with a friendly built-in access message.</description>
 	<files>
 		<filename plugin="mooautherrorredirect">mooautherrorredirect.php</filename>
 		<filename>index.html</filename>
 	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="miniOrange OAuth Error Page Updates">https://raw.githubusercontent.com/East-Cheshire-Ramblers/mooautherrorredirect/main/updates/mooautherrorredirect.xml</server>
+	</updateservers>
 </extension>
