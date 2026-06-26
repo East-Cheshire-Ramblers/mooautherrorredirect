@@ -1,8 +1,8 @@
-# miniOrange OAuth Error Redirect
+# miniOrange OAuth Error Page
 
-Joomla system plugin that redirects the miniOrange OAuth "User Auto-Creation Not Available" page to a configured article or menu URL.
+Joomla system plugin that replaces the miniOrange OAuth "User Auto-Creation Not Available" page with a built-in friendly access message.
 
-This keeps SSO user auto-registration disabled while providing a friendlier page for people who do not already have a Joomla account.
+This keeps SSO user auto-registration disabled while providing a friendlier page for people who do not already have a Joomla account. The page is rendered by the plugin, so it does not depend on a Joomla article or menu item being enabled.
 
 ## Installation
 
@@ -12,13 +12,9 @@ Install the plugin through Joomla's extension installer, then enable:
 
 ## Configuration
 
-Open the plugin settings and set `Redirect URL` to the Joomla article or menu URL that should be shown to unknown SSO users.
+No plugin settings are required.
 
-Examples:
-
-- `/sso-access-denied`
-- `/account-access-request`
-- `https://example.org/sso-access-denied`
+The Ramblers group name shown in the message is taken from Joomla's configured site name. If the site name is unavailable, the plugin falls back to "this Ramblers group".
 
 ## Behaviour
 
@@ -26,4 +22,4 @@ The plugin watches the miniOrange OAuth callback path:
 
 `/api/index.php/v1/miniorangeoauth`
 
-If the generated page contains miniOrange's auto-creation error text, it replaces the page with a redirect to the configured URL.
+If the generated page contains miniOrange's auto-creation error text, it replaces the page with a built-in 403 access message.

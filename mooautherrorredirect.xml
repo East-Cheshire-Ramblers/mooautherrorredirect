@@ -3,24 +3,10 @@
 	<name>System - miniOrange OAuth Error Redirect</name>
 	<author>East Cheshire Ramblers</author>
 	<creationDate>2026-06-26</creationDate>
-	<version>1.0.1</version>
-	<description>Redirects the miniOrange OAuth user auto-creation error page to a custom Joomla article or menu item.</description>
+	<version>1.1.0</version>
+	<description>Replaces the miniOrange OAuth user auto-creation error page with a friendly built-in access message.</description>
 	<files>
 		<filename plugin="mooautherrorredirect">mooautherrorredirect.php</filename>
 		<filename>index.html</filename>
 	</files>
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field
-					name="redirect_url"
-					type="text"
-					label="Redirect URL"
-					description="The article or menu URL to show when miniOrange cannot create an SSO user. Use a site-relative URL such as /sso-access-request, or a full URL."
-					default="/"
-					size="60"
-				/>
-			</fieldset>
-		</fields>
-	</config>
 </extension>
