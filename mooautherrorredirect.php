@@ -20,7 +20,7 @@ class PlgSystemMooautherrorredirect extends CMSPlugin
 			$this->app = Factory::getApplication();
 		}
 
-		if (!$this->isMiniOrangeOAuthCallback()) {
+		if (!$this->isSsoCallback()) {
 			return;
 		}
 
@@ -67,13 +67,22 @@ class PlgSystemMooautherrorredirect extends CMSPlugin
 		$this->renderAccessErrorPage();
 	}
 
-	private function isMiniOrangeOAuthCallback()
+	private function isSsoCallback()
 	{
 		$requestUri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
 		$path = trim((string) parse_url($requestUri, PHP_URL_PATH), '/');
-		$callbackPath = 'v1/miniorangeoauth';
+		$callbackPaths = array(
+			'v1/ra-sso-login',
+			'v1/miniorangeoauth',
+		);
 
-		return substr($path, -strlen($callbackPath)) === $callbackPath;
+		foreach ($callbackPaths as $callbackPath) {
+			if (substr($path, -strlen($callbackPath)) === $callbackPath) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	private function isAutoCreationErrorPage($body)

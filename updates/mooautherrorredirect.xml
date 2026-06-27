@@ -2,17 +2,17 @@
 <updates>
 	<update>
 		<name>plg_system_mooautherrorredirect</name>
-		<description>Replaces the miniOrange OAuth user auto-creation error page with a friendly built-in access message.</description>
+		<description>Replaces the RA SSO user auto-creation error page with a friendly built-in access message.</description>
 		<element>mooautherrorredirect</element>
 		<folder>system</folder>
 		<type>plugin</type>
-		<version>1.1.1</version>
+		<version>1.2.0</version>
 		<client>site</client>
-		<infourl title="Release notes">https://github.com/East-Cheshire-Ramblers/mooautherrorredirect/releases/tag/v1.1.1</infourl>
+		<infourl title="Release notes">https://github.com/East-Cheshire-Ramblers/mooautherrorredirect/releases/tag/v1.2.0</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/East-Cheshire-Ramblers/mooautherrorredirect/releases/download/v1.1.1/mooautherrorredirect-1.1.1.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/East-Cheshire-Ramblers/mooautherrorredirect/releases/download/v1.2.0/mooautherrorredirect-1.2.0.zip</downloadurl>
 		</downloads>
-		<sha256>bf5a2c623f130724d956bb653ca7d3a6fc48347c097c579f13e01d26b0872cd6</sha256>
+		<sha256>94d03cfa034cf61aa7ece106754163376d154686fbba35a9186e53342fdd82e4</sha256>
 		<targetplatform name="joomla" version="5.*"/>
 	</update>
 </updates>

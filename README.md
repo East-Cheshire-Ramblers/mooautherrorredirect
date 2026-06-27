@@ -1,6 +1,6 @@
-# miniOrange OAuth Error Page
+# RA SSO Error Page
 
-Joomla system plugin that replaces the miniOrange OAuth "User Auto-Creation Not Available" page with a built-in friendly access message.
+Joomla system plugin that replaces the RA SSO "User Auto-Creation Not Available" page with a built-in friendly access message.
 
 This keeps SSO user auto-registration disabled while providing a friendlier page for people who do not already have a Joomla account. The page is rendered by the plugin, so it does not depend on a Joomla article or menu item being enabled.
 
@@ -8,7 +8,7 @@ This keeps SSO user auto-registration disabled while providing a friendlier page
 
 Install the plugin through Joomla's extension installer, then enable:
 
-`System - miniOrange OAuth Error Redirect`
+`System - RA SSO Error Redirect`
 
 ## Configuration
 
@@ -26,8 +26,12 @@ Joomla must be able to fetch the update XML and release ZIP without GitHub authe
 
 ## Behaviour
 
-The plugin watches the miniOrange OAuth callback path:
+The plugin watches the RA SSO callback path:
+
+`/api/index.php/v1/ra-sso-login`
+
+It also supports the legacy callback path for existing installations:
 
 `/api/index.php/v1/miniorangeoauth`
 
-If the generated page contains miniOrange's auto-creation error text, it replaces the page with a built-in 403 access message.
+If the generated page contains the inherited auto-creation error text, it replaces the page with a built-in 403 access message.
