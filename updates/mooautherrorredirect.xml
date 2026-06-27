@@ -6,13 +6,13 @@
 		<element>mooautherrorredirect</element>
 		<folder>system</folder>
 		<type>plugin</type>
-		<version>1.2.0</version>
+		<version>1.2.1</version>
 		<client>site</client>
-		<infourl title="Release notes">https://github.com/East-Cheshire-Ramblers/mooautherrorredirect/releases/tag/v1.2.0</infourl>
+		<infourl title="Release notes">https://github.com/East-Cheshire-Ramblers/mooautherrorredirect/releases/tag/v1.2.1</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/East-Cheshire-Ramblers/mooautherrorredirect/releases/download/v1.2.0/mooautherrorredirect-1.2.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/East-Cheshire-Ramblers/mooautherrorredirect/releases/download/v1.2.1/mooautherrorredirect-1.2.1.zip</downloadurl>
 		</downloads>
-		<sha256>94d03cfa034cf61aa7ece106754163376d154686fbba35a9186e53342fdd82e4</sha256>
+		<sha256>d01ffd668054f582fe9e63e40b8070ddd523756f0d060113ce63f69a2a3b4ab1</sha256>
 		<targetplatform name="joomla" version="5.*"/>
 	</update>
 </updates>
