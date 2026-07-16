@@ -20,7 +20,7 @@ The Ramblers group name shown in the message is taken from Joomla's configured s
 
 The plugin manifest includes a Joomla update server:
 
-`https://raw.githubusercontent.com/East-Cheshire-Ramblers/mooautherrorredirect/main/updates/mooautherrorredirect.xml`
+`https://raw.githubusercontent.com/Ramblers-Tools/mooautherrorredirect/main/updates/mooautherrorredirect.xml`
 
 Joomla must be able to fetch the update XML and release ZIP without GitHub authentication. If this repository remains private, mirror the update XML and ZIP to a public location and update the manifest's `<updateservers>` URL before installing.
 
