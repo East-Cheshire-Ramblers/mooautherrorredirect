@@ -3,7 +3,7 @@
 	<name>System - RA SSO Error Redirect</name>
 	<author>East Cheshire Ramblers</author>
 	<creationDate>2026-06-26</creationDate>
-	<version>1.2.1</version>
+	<version>1.2.2</version>
 	<description>Replaces the RA SSO user auto-creation error page with a friendly built-in access message.</description>
 	<scriptfile>my_script.php</scriptfile>
 	<files>
